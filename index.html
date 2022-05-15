@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eye Test</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+  <canvas id="myCanvas"></canvas>
+
+  <form>
+    <label for="cellSize">Taille de la case</label>
+    <input type="range" min="8" max="128" value="32" name="cellSize"
+      id="cellSize" />
+
+    <label for="fps">Nombre de rafraîchissement par seconde</label>
+    <input type="range" min="1" max="60" value="20" name="fps" id="fps" />
+
+    <label for="rowCellAmount">Nombre de lignes</label>
+    <input type="range" min="6" max="24" value="6" name="rowCellAmount"
+      id="rowCellAmount" />
+
+    <label for="colCellAmount">Nombre de colonnes</label>
+    <input type="range" min="6" max="24" value="6" name="colCellAmount"
+      id="colCellAmount" />
+
+    <label for="color1">Couleur 1</label>
+    <input type="color" value="#ffff00" name="color1" id="color1">
+
+    <label for="color2">Couleur 2</label>
+    <input type="color" value="#0000ff" name="color2" id="color2">
+  </form>
+</body>
+
+</html>
